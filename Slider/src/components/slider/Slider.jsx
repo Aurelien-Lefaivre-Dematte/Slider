@@ -1,8 +1,9 @@
 import { useState, useEffect } from "react"
-import leftChevron from "../../assets/left-arrow.svg"
-import rightChevron from "../../assets/right-arrow.svg"
+import leftChevron from "./../../assets/left-arrow.svg"
+import rightChevron from "./../../assets/right-arrow.svg"
 import "./Slider.css"
-import sliderData from "../../data/sliderData"
+import sliderData from "../../data/slider-data"
+
 
 export default function Slider() {
     const [sliderIndex, setSliderIndex] = useState(1)
@@ -32,7 +33,7 @@ export default function Slider() {
 }
 
     useEffect(() => {
-    // const intervalID = setInterval(() => toggleImage(1), 2000)
+    const intervalID = setInterval(() => toggleImage(1), 4000)
 
     return () => clearInterval(intervalID)
 }, [])
