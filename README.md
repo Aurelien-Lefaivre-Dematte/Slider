@@ -1,5 +1,5 @@
-# Slider
-=============
+# SLIDER
+
 
 ## Français
 
